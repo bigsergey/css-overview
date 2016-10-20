@@ -33,11 +33,10 @@ Opis wyżej wymienionych funkcji i róznice w syntax dla preprocessorów SASS, L
 Postprocesor CSS przymuje na wejście CSS, następnie przekształca go na różne sposoby i na wyjście podaje CSS. Przykłady postprocesorów:
 
 - [CSSO](https://github.com/css/csso) - minifikacja CSS,
-- Autoprefixer - automatyczne dodawanie prefixsów.
-- Pleeease.io - aplikacja Node.js, która w prosty sposób przetwarza CSS.
-- CSSComb - automatycznie zmienia formatowanie styli CSS i kolejność reguł w selectorach.
-- Rework - narzędzie pozwalające na manipulacje z CSS, udostępnia wygodny interfejs do stworzenia własnych pluginów przetwarzających CSS kod. Autorem jest TJ Holowaychuk (autor Stylus). Rework został zaprezentowany publicznie w 14 marca 2013 roku - [Modular CSS preprocessing with rework](http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework).
-- PostCSS - narzędzie do transformacji(transforming) stylów za pomocą pluginów napisanych w Javascript. Autorem jest [Andrey Sitnik](https://github.com/ai). PostCSS jest oparty o idee Rework.
+- [Pleeease.io](http://pleeease.io/) - aplikacja Node.js, która w prosty sposób przetwarza CSS.
+- [CSSComb](http://csscomb.com/) - automatycznie zmienia formatowanie styli CSS i kolejność reguł w selectorach.
+- [Rework](https://github.com/reworkcss/rework) - narzędzie pozwalające na manipulacje z CSS, udostępnia wygodny interfejs do stworzenia własnych pluginów przetwarzających CSS kod. Autorem jest TJ Holowaychuk (autor Stylus). Rework został zaprezentowany publicznie w 14 marca 2013 roku - [Modular CSS preprocessing with rework](http://tjholowaychuk.tumblr.com/post/44267035203/modular-css-preprocessing-with-rework).
+- [PostCSS](http://postcss.org/) - narzędzie do transformacji(transforming) stylów za pomocą pluginów napisanych w Javascript. Autorem jest [Andrey Sitnik](https://github.com/ai). PostCSS jest oparty o idee Rework.
 
 ![Preprocessing and postprocessing in a toolchain](https://cdn-images-1.medium.com/max/1600/1*9WXGWDhXyzd5XGY1uz1nrg.jpeg "reprocessing and postprocessing in a toolchain")
 **Rysunek 1.** *Preprocessing and postprocessing in a toolchain. Source: [Deconfusing Pre- and Post-processing](https://medium.com/@ddprrt/deconfusing-pre-and-post-processing-d68e3bd078a3#.l1kwsfwqv).*
