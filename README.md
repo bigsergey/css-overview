@@ -6,7 +6,7 @@ W dziesiejszych czasach Frontend technologie rozwijają się bardzo szybko. Pows
 
 Narzędzia opisane w artykule są rozbitę na grupy, natomiast to tylko orientacyjny podział. Niektóre narzędzia ciężko jest wydzielić do jednej grupy. Z tym podziałem możecie się zgodzić lub nie, albo zaproponować własny (chętnie się dowiem wasze zdanie na ten temat). Głownym celem tego artykułu jest pomoc developerom zastanwiającym się z czego można skorzystać przy rozpocięciu pisania albo utrzymaniu styli w projekcie. 
 
-## Preprocessors
+## CSS Preprocessors
 
 Preprocessory CSS są jednym z najbardziej popularnych i wykorzystywanych narzędzi CSS. CSS preprocessor jest rozszerzeniem(extends) języka CSS, która dodaje wcześniej niedostępne możliwości w CSS, za pomocą nowych konstrukcji syntaktycznych. Preprocessory przekształcają kod napisany w składni preprocessora na poprawny CSS kod. Najbardziej znanymi preprocessorami są:
 
@@ -28,7 +28,7 @@ W internicie można znaleźć dużo informacji na temat preprocessorów CSS. Gł
 
 Opis wyżej wymienionych funkcji i róznice w syntax dla preprocessorów SASS, LESS, Styles są bardzo dobrze opisane w artykule: [An Introduction to CSS Pre-Processors: SASS, LESS and Stylus](http://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus). Natomiast w tym artukule jak mówi nazwa są opisane 6 róznych preprocessorów CSS: [6 Current Options for CSS Preprocessors](https://www.sitepoint.com/6-current-options-css-preprocessors/).
 
-## (Post)?processors
+## CSS Post(?)processors
 
 Postprocesor CSS przymuje na wejście CSS, następnie przekształca go na różne sposoby i na wyjście podaje CSS. Przykłady postprocesorów:
 
@@ -41,7 +41,21 @@ Postprocesor CSS przymuje na wejście CSS, następnie przekształca go na różn
 ![Preprocessing and postprocessing in a toolchain](https://cdn-images-1.medium.com/max/1600/1*9WXGWDhXyzd5XGY1uz1nrg.jpeg "reprocessing and postprocessing in a toolchain")
 **Rysunek 1.** *Preprocessing and postprocessing in a toolchain. Source: [Deconfusing Pre- and Post-processing](https://medium.com/@ddprrt/deconfusing-pre-and-post-processing-d68e3bd078a3#.l1kwsfwqv).*
 
-A propo terminu 'postprocesor CSS' są różne opinie. Jedni uważają, że termin lepiej się nadaje do narzędzi, które działają w przeglądarce (np. [-prefix-free](http://leaverou.github.io/prefixfree/) lub client-side polyfills), drudzy mowią o postprocesorach jako o narzędziu, ktore pracuje bezpośrednio z css napisanym ręcznie lub wygenerowanym przez preprocesory (Rysunek 1). Na przykład zespół PostCSS zrezygnował z użycia terminu postprocessor i obecnie używają określenia processor CSS ([tweet](https://twitter.com/PostCSS/status/626046993006239744)).
+A propo terminu 'postprocesor CSS' są różne opinie. Jedni uważają, że termin lepiej się nadaje do narzędzi, które działają w przeglądarce (np. [-prefix-free](http://leaverou.github.io/prefixfree/) lub client-side polyfills), drudzy mowią o postprocesorach jako o narzędziu, ktore pracuje bezpośrednio z css napisanym ręcznie lub wygenerowanym przez preprocesory (Rysunek 1). Na przykład zespół PostCSS zrezygnował z użycia terminu postprocessor i obecnie używają określenia processor CSS (oficjalny [tweet](https://twitter.com/PostCSS/status/626046993006239744) zepołu PostCSS). W tym artykule używamy określenia postprocessor.
+
+Najbardziej znanym obecnie postprocesorem jest PostCSS. Posiada ponad 300 pluginów, jakość, popularność pluginow jest różna. Lista dostępnych pluginów można znaleźć na stronie [postcss.parts](http://postcss.parts/). Kilka przykładów:
+
+- [Autoprefixer](https://github.com/postcss/autoprefixer) - najbardziej znany plugin PostCSS, który za pomocą wartości z serwisu [Can I Use](http://caniuse.com/) dodaje prefiksy do reguł CSS (add vendor prefixes to CSS rules).
+- [cssnano](http://cssnano.co/) - plugin zajmujący się kompresją CSS kodu. 
+- [Stylint](http://stylelint.io/) - analizuje kod CSS na obecność w nim błędów, a także trzymanie się przyjętego codestyle. 
+- [RTLCSS]()
+- [PreCSS]()
+- [SugarSS]()
+- [CSS Modules]()
+- [postcss-cssnext]()
+- [postcss-assests](), [postcss-inline-svg](), [postcss-sprites]().
+
+Webpack używa PostCSS dla pracy z CSS.
 
 
 
